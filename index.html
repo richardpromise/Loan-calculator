@@ -18,27 +18,32 @@
 
     <div class="wrapper">
       <div class="form-holder">
+        <h1 class="errorMsg">Please input valid numbers and try again</h1>
+        <br />
         <h1 class="header">Loan calculator</h1>
-        <div class="form">
+        <form class="form">
           <div class="inputHolder">
             <i class="fa-solid fa-naira-sign icon"></i><input type="number"
-            name="" id="" class="number-input" / placeholder="Loan Amount">
+            name="" id="amount" class=" number-input " / placeholder=" Amount">
           </div>
           <br />
           <div class="inputHolder">
             <i class="fa-solid fa-percent icon"></i><input type="number" name=""
-            id="" class="number-input" / placeholder="Loan Intrest">
+            id="Intrest" class="number-input " / placeholder=" Intrest">
           </div>
           <br />
           <div class="repayment-input">
-            <input type="number" name="" id="" class="repayment-number-input" /
-            placeholder="Repayment years">
+            <input type="number" name="" id="years"
+            class="repayment-number-input" / placeholder="Repayment years">
           </div>
           <br />
-          <div class="btn">
-            <button class="CalculateBtn">Calculate</button>
-          </div>
-        </div>
+          <!-- <div class="btn"> -->
+          <button class="CalculateBtn">Calculate</button>
+          <!-- </div> -->
+        </form>
+      </div>
+      <div id="loading">
+        <img src="contents/images/loading.gif" alt="" />
       </div>
       <div class="resultFormHolder">
         <div class="resultFormTitle">Results</div>
@@ -46,15 +51,15 @@
           <ul class="result-ul">
             <div class="result-li flex">
               <p class="p">Monthly Payent</p>
-              <li class="result-list">10</li>
+              <li id="monthly-payment" class="result-list"></li>
             </div>
             <div class="result-li flex">
               <p class="p">Total Payment</p>
-              <li class="result-list">10</li>
+              <li id="total-payment" class="result-list"></li>
             </div>
             <div class="result-li flex">
               <p class="p">Total Intrest</p>
-              <li class="result-list">10</li>
+              <li id="total-intrest" class="result-list"></li>
             </div>
           </ul>
         </div>
